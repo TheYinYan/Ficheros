@@ -2,12 +2,11 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.lang.classfile.BufWriter;
 import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new FileReader("alumnos.csv"));
+        BufferedReader br = new BufferedReader(new FileReader(args[0]));
 
         ArrayList<Persona> personas = new ArrayList<Persona>();
         String linea;
